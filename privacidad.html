@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | QNetSys</title>
+  <meta name="description" content="Política de Privacidad de QNetSys — cómo recopilamos, usamos y protegemos tus datos personales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            tech: ['Orbitron', 'sans-serif'],
+          },
+          colors: {
+            qnet: {
+              dark: '#0a0e1a',
+              primary: '#0f172a',
+              accent: '#06b6d4',
+              accentHover: '#0891b2',
+              secondary: '#6366f1',
+              surface: '#1e293b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 nav-blur border-b border-white/5 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center space-x-3 group cursor-pointer">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-indigo-600 flex items-center justify-center group-hover:shadow-lg group-hover:shadow-cyan-500/30 transition-all">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <span class="font-tech text-2xl font-bold tracking-wider text-white">QNet<span class="text-cyan-400">Sys</span></span>
+        </a>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html#nosotros" class="text-sm font-medium text-gray-300 hover:text-cyan-400 transition-colors">Nosotros</a>
+          <a href="index.html#servicios" class="text-sm font-medium text-gray-300 hover:text-cyan-400 transition-colors">Servicios</a>
+          <a href="index.html#como-trabajamos" class="text-sm font-medium text-gray-300 hover:text-cyan-400 transition-colors">Cómo trabajamos</a>
+          <a href="index.html#clientes" class="text-sm font-medium text-gray-300 hover:text-cyan-400 transition-colors">Clientes</a>
+          <a href="index.html#contacto" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all transform hover:-translate-y-0.5">
+            Cotizar Ahora
+          </a>
+        </div>
+
+        <button class="md:hidden text-gray-300 hover:text-white" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden bg-qnet-primary border-t border-white/5">
+      <div class="px-4 pt-2 pb-6 space-y-1">
+        <a href="index.html#nosotros" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-cyan-400 hover:bg-white/5 rounded-md">Nosotros</a>
+        <a href="index.html#servicios" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-cyan-400 hover:bg-white/5 rounded-md">Servicios</a>
+        <a href="index.html#como-trabajamos" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-cyan-400 hover:bg-white/5 rounded-md">Cómo trabajamos</a>
+        <a href="index.html#clientes" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-cyan-400 hover:bg-white/5 rounded-md">Clientes</a>
+        <a href="index.html#contacto" class="block px-3 py-2 text-base font-medium text-cyan-400 font-semibold">Cotizar Ahora</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado de página legal -->
+  <header class="relative grid-bg pt-40 pb-16 overflow-hidden">
+    <div class="absolute inset-0 hero-overlay pointer-events-none"></div>
+    <div class="relative max-w-3xl mx-auto px-6 text-center">
+      <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-indigo-600/20 border border-cyan-500/20 mb-6">
+        <svg class="w-7 h-7 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+        </svg>
+      </div>
+      <p class="text-sm font-medium text-gray-500 mb-3">
+        <a href="index.html" class="hover:text-cyan-400 transition-colors">Inicio</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-400">Política de Privacidad</span>
+      </p>
+      <h1 class="text-4xl sm:text-5xl font-tech font-bold gradient-text mb-4">Política de Privacidad</h1>
+      <p class="text-gray-400 max-w-xl mx-auto">
+        Cómo recopilamos, usamos y protegemos tu información en QNetSys.
+      </p>
+    </div>
+  </header>
+
+  <!-- Contenido legal -->
+  <main class="relative">
+    <div class="absolute inset-0 grid-bg opacity-40 pointer-events-none"></div>
+    <div class="relative max-w-4xl mx-auto px-6 pb-24">
+      <div class="glass-card rounded-2xl p-8 sm:p-12 legal-modal-content text-gray-300 leading-relaxed">
+        <p class="mb-4">
+          En QNetSys valoramos tu privacidad y nos comprometemos a proteger la información personal que compartís con nosotros.
+          Esta política explica cómo recopilamos, usamos y protegemos tus datos.
+        </p>
+
+        <h2 class="text-xl font-semibold text-cyan-400 mt-8 mb-3">1. Información recopilada</h2>
+        <p class="mb-4">
+          Podemos recopilar datos personales como nombre, correo electrónico y número de teléfono cuando completás formularios o solicitás servicios.
+        </p>
+
+        <h2 class="text-xl font-semibold text-cyan-400 mt-8 mb-3">2. Uso de la información</h2>
+        <p class="mb-4">
+          Utilizamos tus datos para responder consultas, ofrecer soporte técnico y mejorar nuestros servicios.
+          No compartimos tu información con terceros sin tu consentimiento.
+        </p>
+
+        <h2 class="text-xl font-semibold text-cyan-400 mt-8 mb-3">3. Seguridad</h2>
+        <p class="mb-4">
+          Implementamos medidas técnicas y organizativas para proteger tus datos contra accesos no autorizados, pérdida o alteración.
+        </p>
+
+        <h2 class="text-xl font-semibold text-cyan-400 mt-8 mb-3">4. Derechos del usuario</h2>
+        <p class="mb-4">
+          Podés solicitar acceso, rectificación o eliminación de tus datos personales escribiendo a nuestro correo de contacto.
+        </p>
+
+        <p class="mt-10 pt-6 border-t border-white/5 text-sm text-gray-500">Última actualización: Junio 2026</p>
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="index.html" class="inline-flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-cyan-400 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          Volver al inicio
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 bg-qnet-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+        <div class="lg:col-span-2">
+          <div class="flex items-center space-x-3 mb-5">
+            <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-indigo-600 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <span class="font-tech text-xl font-bold text-white">QNet<span class="text-cyan-400">Sys</span></span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed max-w-sm mb-6">
+            Líderes en sistemas integrados de seguridad electrónica y control de acceso. Protegiendo infraestructuras críticas con tecnología de vanguardia.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
+              <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              ISO 27001
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
+              <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              GDPR Ready
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
+              <svg class="w-3.5 h-3.5 text-green-400" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4"/></svg>
+              Uptime 99.9%
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Servicios</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="index.html#servicios" class="hover:text-cyan-400 transition-colors flex items-center gap-2 group"><span class="w-1 h-1 rounded-full bg-cyan-500/50 group-hover:bg-cyan-400 transition-colors"></span>CCTV Inteligente</a></li>
+            <li><a href="index.html#servicios" class="hover:text-cyan-400 transition-colors flex items-center gap-2 group"><span class="w-1 h-1 rounded-full bg-cyan-500/50 group-hover:bg-cyan-400 transition-colors"></span>Control de Acceso</a></li>
+            <li><a href="index.html#servicios" class="hover:text-cyan-400 transition-colors flex items-center gap-2 group"><span class="w-1 h-1 rounded-full bg-cyan-500/50 group-hover:bg-cyan-400 transition-colors"></span>IoT & Automatización</a></li>
+            <li><a href="index.html#servicios" class="hover:text-cyan-400 transition-colors flex items-center gap-2 group"><span class="w-1 h-1 rounded-full bg-cyan-500/50 group-hover:bg-cyan-400 transition-colors"></span>Ciberseguridad</a></li>
+            <li><a href="index.html#servicios" class="hover:text-cyan-400 transition-colors flex items-center gap-2 group"><span class="w-1 h-1 rounded-full bg-cyan-500/50 group-hover:bg-cyan-400 transition-colors"></span>Plataforma Cloud</a></li>
+            <li><a href="index.html#servicios" class="hover:text-cyan-400 transition-colors flex items-center gap-2 group"><span class="w-1 h-1 rounded-full bg-cyan-500/50 group-hover:bg-cyan-400 transition-colors"></span>Soporte 24/7</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Empresa</h4>
+          <ul class="space-y-3 text-sm text-gray-400 mb-8">
+            <li><a href="index.html#nosotros" class="hover:text-cyan-400 transition-colors flex items-center gap-2 group"><span class="w-1 h-1 rounded-full bg-cyan-500/50 group-hover:bg-cyan-400 transition-colors"></span>Nosotros</a></li>
+            <li><a href="index.html#tecnologia" class="hover:text-cyan-400 transition-colors flex items-center gap-2 group"><span class="w-1 h-1 rounded-full bg-cyan-500/50 group-hover:bg-cyan-400 transition-colors"></span>Tecnología</a></li>
+            <li><a href="index.html#contacto" class="hover:text-cyan-400 transition-colors flex items-center gap-2 group"><span class="w-1 h-1 rounded-full bg-cyan-500/50 group-hover:bg-cyan-400 transition-colors"></span>Contacto</a></li>
+          </ul>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Seguinos</h4>
+          <div class="flex gap-3">
+            <a href="https://www.linkedin.com/company/iqintegrations/" aria-label="LinkedIn" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:border-cyan-500/30 transition-all">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://wa.me/59892769478?text=Hola%20quiero%20más%20información%20sobre " aria-label="WhatsApp" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:border-cyan-500/30 transition-all">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-gray-500">&copy; <span id="footer-year"></span> QNetSys. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-6 text-sm text-gray-500">
+          <a href="privacidad.html" class="text-cyan-400">Política de Privacidad</a>
+          <a href="terminos.html" class="hover:text-cyan-400 transition-colors">Términos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
